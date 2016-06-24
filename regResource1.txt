@@ -1,0 +1,7 @@
+This text is currently saved as the default VS 2016 encoding. This text should not recieve garbage characters when reading the file. However, there may be hidden symbols inside this text file.
+These hidden symbols may denote a custom encoding. After some basic research, Unicode and std::locale are too big of a package to integrate into this project. >>\ is a hidden symbol. Who knows what
+Unicode character it might represent. >>\ one asdf sadf dfas sfda are permutations, no need to worry about that! Encoding is different then encrypting? I suppose. One is meant for hiding and the other 
+is meant for communicating. Vastly different goals but both have common mathematical and computational properties. Let's see here.. <<\ >>\ \> \< I suppose someone might enter these character sequences in
+the command prompt and see what happens! Now for something strange. ? that prev char was the arabic character alif! However this file may not be saved in a format to even know what that means?
+But I still wrote it. Let's just see how good of error output i can create. I purposely did not save to another codepage. I then reopened to find a question mark in its place! oddResource1 is saved
+in a Unicode codepage. I'm hoping it is UTF-8 but whatever.
