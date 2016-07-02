@@ -42,4 +42,7 @@ seqType Symbol::get_symbol_type() {
 bool Symbol::isPlural() {
   return false;
 }
+
+// NOTE:
+//  MAKE ascii matrix and operations compatible with Symbol
 #endif
