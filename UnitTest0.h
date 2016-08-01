@@ -12,6 +12,7 @@ public:
   bool t1Symbol();
   bool t2Symbol();
   bool t3Symbol();
+  bool t4Symbol();
   bool tCopySymbol();
   void LoadFunction(void(*func));
 private:
@@ -59,23 +60,45 @@ bool UnitTestZero::t0Symbol() {
   Symbol s = Symbol('c');
   if (s.getSymbol() == 'c')
     return true;
+  else
+    return false;
 }
 
 bool UnitTestZero::t1Symbol() {
   Symbol s = Symbol('c');
   if (s.getSymbol() == 99)
     return true;
+  else
+    return false;
 }
 
 bool UnitTestZero::t2Symbol() {
   Symbol s = Symbol('c');
   if (s.getMe() == 'c')
     return true;
+  else
+    return false;
 }
 
 bool UnitTestZero::t3Symbol() {
   Symbol s = Symbol('c');
   if (s.getMe() == 99)
     return true;
+  else
+    return false;
+}
+
+bool UnitTestZero::t4Symbol() {
+  Symbol s = Symbol();
+  Symbol c = Symbol('c');
+  int t_2 = 0;
+  if (s.get_symbol_type() == seqType::noType)
+    t_2++;
+  if (c.get_symbol_type() == seqType::regular)
+    t_2++;
+  if (t_2 == 2)
+    return true;
+  else
+    return false;
 }
 #endif
