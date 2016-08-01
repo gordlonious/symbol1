@@ -10,12 +10,16 @@ public:
   arrayChar(arrayChar& ac);
   arrayChar(arrayChar&& ac);
   arrayChar(std::string sSym);
-  arrayChar(std::array<char, binMax::gim>& sSym, char endToken);
-  unsigned int getSize();
+  arrayChar(std::array<char, binMax::gim>& sSym);
+  void assign(char c, int index);
+
+  unsigned int getStdSize();
+  unsigned int getObjSize();
   bool clear();
 private:
   int symSize;
   char endTok;
   std::array<char, binMax::gim> stdSym;
+  char* customArray;
 };
 #endif
