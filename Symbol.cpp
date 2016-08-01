@@ -6,7 +6,10 @@ Symbol::Symbol() {
   symT = seqType::noType;
 }
 
-Symbol::Symbol(char c) : char_Symbol_Base(c) { }
+// default to regular with char construction
+Symbol::Symbol(char c) : char_Symbol_Base(c) {
+  symT = seqType::regular;
+}
 
 Symbol::~Symbol() {
   // no pointer members
