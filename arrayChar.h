@@ -7,6 +7,8 @@ class arrayChar {
 public:
   arrayChar();
   arrayChar(int size);
+  arrayChar(arrayChar& ac);
+  arrayChar(arrayChar&& ac);
   arrayChar(std::string sSym);
   arrayChar(std::array<char, binMax::gim>& sSym, char endToken);
   unsigned int getSize();
