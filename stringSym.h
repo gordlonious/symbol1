@@ -2,7 +2,7 @@
 #define stringSym_H
 #include "arrayChar.h"
 
-class stringSym : public arrayChar {
+class stringSym {
 public:
   stringSym();
   stringSym(std::array<char, binMax::gim> &arChar);

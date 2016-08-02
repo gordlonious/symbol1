@@ -3,6 +3,7 @@
 #include <array>
 #include "binMax.h"
 
+template<unsigned int _size>
 class arrayChar {
 public:
   arrayChar();

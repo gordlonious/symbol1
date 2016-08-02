@@ -3,7 +3,7 @@
 #include <iostream>
 #include "stringSym.h"
 
-stringSym::stringSym() : arrayChar() { }
+stringSym::stringSym() { }
 
 stringSym::stringSym(std::array<char, binMax::gim> &arr) {
   // range loop?
